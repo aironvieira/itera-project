@@ -44,9 +44,7 @@
     }
 }
 
-body{
-	width: 100vw;
-}
+
   
 body *{
 	font-family: 'Roboto';
@@ -83,7 +81,7 @@ header p{
 }
 
 header .header-logo .header-logo-span{
-    color: #ff4500d9;
+    color: #f35b0f;
 }
 
 header a{
@@ -100,7 +98,7 @@ header a:hover{
 header .header-cta{
     color: #fff;
     padding: 10px 15px;
-    background-color: #ff4500d9;;
+    background-color: #f35b0f;;
     border-radius: 20px;
     transition: background ease-out 0.2s;
 }
@@ -164,7 +162,7 @@ header .header-cta:hover{
     position: fixed;
     height: 9px;
     width: 100%;
-    background: #d3531a;
+    background: #f35b0f;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -243,3 +241,75 @@ section{
 
 /* Footer */
 
+footer{
+	padding: 60px 0;
+	background-color: #212429;
+	color: #fff;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+	color: #fff;
+}
+
+footer .footer-cta{
+	display: inline-block;
+	font-size: 12px;
+	margin: 15px 0 20px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #f35b0f;;
+    border-radius: 20px;
+    transition: background ease-out 0.2s;
+}
+
+footer .footer-cta:hover{
+    color: #fff;
+    background-color: orangered;
+}
+
+footer .footer-small-title,
+footer .footer-big-title{
+	margin: 0;
+}
+footer .footer-small-title{
+	font-size: 12px;
+}
+footer .footer-big-title{
+	font-size: 38px;
+	font-weight: bold;
+}
+
+footer .footer-big-title span{
+	color: #ff4500d9;
+}
+
+footer .footer-img{
+	height: 70px;
+	width: 70px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	margin: 30px 0;
+}
+
+footer .footer-big-text{
+	display: block;
+	font-size: 12px;
+	max-width: 460px;
+	margin: 0 auto;
+	line-height: 2;
+}
+
+footer .footer-social > svg{
+	width: 15px;
+	height: 15px;
+	margin: 0 15px;
+}
+
+@media (max-width: 768px){
+	footer{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+}
