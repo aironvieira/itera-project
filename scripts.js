@@ -1,6 +1,16 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    
     var nav_menu = document.querySelector('#nav-icon3');  
     var header = document.querySelector('#header');
 
