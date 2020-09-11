@@ -430,18 +430,18 @@ footer .footer-social > svg{
     max-width: 527px;
 }
 
-.about-me-texts h2{
+.little-title{
     font-size: 12px;
     margin: 0;
 }
 
-.about-me-texts h3{
+.big-title{
     font-size: 60px;
     line-height: 0.9;
     margin: 0;
 }
 
-.about-me-texts p{
+.description-title{
     font-size: 16px;
     line-height: 2.2;
 }
@@ -464,4 +464,131 @@ footer .footer-social > svg{
     .about-me-content-wrapper .about-me-texts{
         margin-bottom: 40px;
     }    
+}
+
+/* Blog */
+
+.blog{
+    text-align: center;
+}
+
+.blog .section-titles{
+    width: max-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.blog .description-title{
+    margin-top: 10px;
+}
+
+
+.blog-post{
+    max-width: 350px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.blog img{
+    width: 350px;
+    height: 400px;
+}
+
+.blog .blog-layer{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(100, 100, 100, 0.5),rgba(233, 219, 219, 0 ) );
+    bottom: 0;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity ease-out 0.1s;
+}
+
+.blog .blog-layer p,
+.blog .blog-layer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog .post-link,
+.blog .post-category{
+    font-size: 12px;
+    margin: 0;
+}
+
+.blog .post-title{
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blog .blog-layer:hover{
+    opacity: 1;
+}
+
+.blog .blog-layer p:first-child{
+    padding-top: 265px;
+}
+
+.blog .blog-post:nth-child(2){
+    margin: 0 15px;
+}
+
+.blog .blog-cta{
+    color: #fff;
+    background-color: #f35b0f;
+    text-decoration: none;
+    padding: 13px 20px 11px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.blog .blog-posts-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1272px){
+    
+    .blog .blog-posts-wrapper{
+        width: 715px;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }    
+
+    .blog .blog-post:nth-child(2){
+        margin-right: 0px;
+    }
+
+    .blog .blog-post:last-child{
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (max-width: 811px){
+    .blog .blog-posts-wrapper{
+        width: initial;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .blog .blog-post:nth-child(2){
+        margin-left: 0px;
+    }
+
+    .blog .blog-post{
+        margin: 0 0 15px 0;
+    }
+
 }
